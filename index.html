@@ -3,8 +3,9 @@
 <head>
 	<title>PTT Software Co.,Ltd</title>
 	<!-- bootstrap css/js -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<!-- fontawsome -->
+	<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+	<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<style type="text/css">
@@ -18,6 +19,7 @@
 				background-size: 5%;
 				transition: 2s;
 			}
+
 			.banners:hover{
 				background-size: 5.5%;
 				background-position: center;
@@ -25,9 +27,16 @@
 			.cardhovers:hover{
 				box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.3);
 			}
+			.maps{
+				width: 100%;
+				height: 50vh;
+			}
 	</style>
 </head>
 <body>
+	<!--	ELFSIGHT-->
+	<div class="elfsight-app-fe7d6006-e97c-407a-9e5e-e86692433bf0"></div>
+	<!--	ELFSIGHT-->
 
 	<!-- Start Header Section -->
 	<header>
@@ -71,7 +80,7 @@
 							<h1 class="text-capitalize display-4"><span class="fw-bold text-primary">PTT </span><span class="text-white">software development company :</span></h1>
 							<h2 class="text-light fst-italic fw-light">We help companies to digitalize their business.</h2>
 							<p class="text-secondary">Property set processes. Transparent cooperation.Predictable delivery.</p>
-							<a href="#" class="btn btn-warning btn-lg rounded-0 px-4 mt-3">Get Touch</a>
+							<a href="#" class="btn btn-warning btn-lg rounded-0 px-4 mt-3" data-bs-toggle="modal" data-bs-target="#loginmodal">Get Touch</a>
 						</div>
 					</div>
 				</div>
@@ -215,10 +224,351 @@
 
 	<!-- End Clients Section -->
 
+<!--	Start Software Section-->
+	<section id="software">
+		<div class="container-fluid">
+<!--			Start Title-->
+			<div class="col-12 text-center">
+				<h1 class="text-warning">Software</h1>
+				<p class="text-muted lead">Projects We Successfully Developed.One look is worth a thousand work.</p>
+			</div>
+<!--			End Title-->
+			<div class="row text-center">
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" class="img-thumbnail" />
+					<h3 class="text-warning my-3">Android Application</h3>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolorum esse exercitationem ipsam non odit perferendis quae rem veritatis!</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHk1SZDMiFDd96lEloEYJsTkQ1ui0OhpamQ&usqp=CAU" class="img-thumbnail" />
+					<h3 class="text-warning my-3">Linux Application</h3>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolorum esse exercitationem ipsam non odit perferendis quae rem veritatis!</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPHk1SZDMiFDd96lEloEYJsTkQ1ui0OhpamQ&usqp=CAU" class="img-thumbnail" />
+					<h3 class="text-warning my-3">Linux Application</h3>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolorum esse exercitationem ipsam non odit perferendis quae rem veritatis!</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<img src="https://cdn.mos.cms.futurecdn.net/4xfefdpQrxqqkQXMCinCmh.jpg" class="img-thumbnail" />
+					<h3 class="text-warning my-3">Window Application</h3>
+					<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolorum esse exercitationem ipsam non odit perferendis quae rem veritatis!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--	End Software Section-->
+<!--	Start Team Section-->
+	<section id="about" class="bg-secondary p-4">
+		<div class="container-fluid">
+<!--			Start Title-->
+			<div class="col-12 text-center">
+				<h3 class="text-warning display-3">Team</h3>
+			</div>
+<!--			End Title-->
+			<div class="row justify-content-center">
+				<div class="col-lg-4 col-sm-10 mb-4">
+					<div class="card">
+						<img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+						<div class="card-body">
+							<div class="card-title">
+								<h3>Ms.Khin Myat Noe</h3>
+							</div>
+							<div class="card-subtitle">
+								<p class="text-muted lead">Operation Manager</p>
+							</div>
+							<div class="float-end">
+								<a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+								<a href="#"><i class="fab fa-youtube fa-2x text-info"></i></a>
+								<a href="#"><i class="fab fa-instagram fa-2x text-danger"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-10 mb-4">
+						<div class="card">
+							<img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+							<div class="card-body">
+								<div class="card-title">
+									<h3>Mr.Pyae Phyo Paing</h3>
+								</div>
+								<div class="card-subtitle">
+									<p class="text-muted lead">Founder and Ceo</p>
+								</div>
+								<div class="float-end">
+									<a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+									<a href="#"><i class="fab fa-youtube fa-2x text-info"></i></a>
+									<a href="#"><i class="fab fa-instagram fa-2x text-danger"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="col-lg-4 col-sm-10 mb-4">
+						<div class="card">
+							<img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+							<div class="card-body">
+								<div class="card-title">
+									<h3>Mr.Htet Paing</h3>
+								</div>
+								<div class="card-subtitle">
+									<p class="text-muted lead">Project Manager</p>
+								</div>
+								<div class="float-end">
+									<a href="#"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+									<a href="#"><i class="fab fa-youtube fa-2x text-info"></i></a>
+									<a href="#"><i class="fab fa-instagram fa-2x text-danger"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+<!--	End Team Section-->
 
+<!--	Start Public Interest Section-->
+	<section class="py-4">
+		<div class="container-fluid">
+			<div class="col-12 text-center">
+				<h1 class="text-warning display-3">Public Interest</h1>
+				<p class="text-muted lead">We design any interfaces for different type of projects and devices.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-sm-10 mx-auto">
+					<h3>Ebook</h3>
+
+					<div class="progress">
+						<div class="progress-bar bg-primary progress-bar-striped" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25</div>
+					</div>
+					<h3>Android Application</h3>
+					<div class="progress">
+						<div class="progress-bar bg-secondary progress-bar-striped" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20</div>
+					</div>
+					<h3>IOS Application</h3>
+					<div class="progress">
+						<div class="progress-bar bg-success progress-bar-striped" style="width: 15%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15</div>
+					</div>
+					<h3>Linux Application</h3>
+					<div class="progress">
+						<div class="progress-bar bg-info progress-bar-striped" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30</div>
+					</div>
+					<h3>Window Application</h3>
+					<div class="progress">
+						<div class="progress-bar bg-danger progress-bar-striped" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--	End Public Interest Section-->
+
+<!--	Start Pricing Section-->
+	<section id="pricing" class="bg-secondary p-4">
+		<div class="container-fluid">
+<!--			Start Title-->
+			<div class="col-12 text-center">
+				<h1 class="text-warning display-3">Pricing</h1>
+				<p class="text-light lead">We design any interfaces for different types of projects and devices.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-12">
+					<div class="card text-center mb-3">
+						<div class="card-body">
+							<h5 class="text-uppercase">Blog Site / free</h5>
+							<h6>0$/month</h6>
+							<hr>
+							<ul class="list-group">
+								<li class="list-group-item">Single User</li>
+								<li class="list-group-item">5Gb Storage</li>
+								<li class="list-group-item">Unlimited Public Project</li>
+								<li class="list-group-item">Community Access</li>
+								<li class="list-group-item">Unlimited Private Project</li>
+								<li class="list-group-item">Dedicated Phone Support</li>
+								<li class="list-group-item"><strong>Free Subdomain</strong></li>
+								<li class="list-group-item">Monthly Status Report</li>
+							</ul>
+							<hr>
+							<div class="d-grid">
+								<a href="#" class="btn btn-warning text-uppercase">Check Out</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="card text-center mb-3">
+						<div class="card-body">
+							<h5 class="text-uppercase">Ecommerce Site / plus</h5>
+							<h6>9$/month</h6>
+							<hr>
+							<ul class="list-group">
+								<li class="list-group-item">Single User</li>
+								<li class="list-group-item">5Gb Storage</li>
+								<li class="list-group-item">Unlimited Public Project</li>
+								<li class="list-group-item">Community Access</li>
+								<li class="list-group-item"><strong>Unlimited</strong> Private Project</li>
+								<li class="list-group-item">Dedicated Phone Support</li>
+								<li class="list-group-item">Free Domain</li>
+								<li class="list-group-item">Monthly Status Report</li>
+							</ul>
+							<hr>
+							<div class="d-grid">
+								<a href="#" class="btn btn-warning text-uppercase">Check Out</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-12">
+					<div class="card text-center mb-3">
+						<div class="card-body">
+							<h5 class="text-uppercase">Dynamic Site / pro</h5>
+							<h6>49$/month</h6>
+							<hr>
+							<ul class="list-group">
+								<li class="list-group-item">Single User</li>
+								<li class="list-group-item">5Gb Storage</li>
+								<li class="list-group-item">Unlimited Public Project</li>
+								<li class="list-group-item">Community Access</li>
+								<li class="list-group-item"><strong>Unlimited</strong> Private Project</li>
+								<li class="list-group-item">Dedicated Phone Support</li>
+								<li class="list-group-item">Free Domain</li>
+								<li class="list-group-item">Monthly Status Report</li>
+							</ul>
+							<hr>
+							<div class="d-grid">
+								<a href="#" class="btn btn-warning text-uppercase">Check Out</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--			End Title-->
+
+		</div>
+	</section>
+<!--	End Pricing Section-->
+
+<!--	Start Contact Section-->
+	<section id="contact" class="py-4">
+		<div class="container-fluid">
+<!--			Start Title-->
+			<div class="text-center">
+				<h1 class="text-warning display-3">Contact Us</h1>
+				<p class="text-muted lead">We design any interfaces for different types of projects and devices.</p>
+			</div>
+<!--			End Title-->
+
+			<div class="row">
+				<div class="col-lg-5 col-md-8 col-sm-10 mx-auto mb-4">
+					<div class="card">
+						<div class="card-header">
+							<h5>Office Location</h5>
+						</div>
+						<div class="card-body">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.7354833097816!2d97.3861976!3d16.8889747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2e971af8489db%3A0x77befc77b793c6f1!2sComputer%20University%20(Thaton)!5e0!3m2!1sen!2smm!4v1668654378436!5m2!1sen!2smm" class="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div class="card-footer">
+							<p>Phone : 09966440977</p>
+							<p>Email : info@ptt.com</p>
+							<p>Address : No.49,Kyar Nyo Street,TBZY</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-8 col-sm-10 mx-auto">
+					<div class="text-center text-muted">
+						<h3>Got questions</h3>
+						<p>Stay connected</p>
+					</div>
+					<form action="">
+						<div class="col-md-12 form-group mb-3">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" class="form-control form-control-sm rounded-0" placeholder="Enter Your Name">
+						</div>
+						<div class="col-md-12 form-group mb-3">
+							<label for="email">Email</label>
+							<input type="text" id="email" name="name" class="form-control form-control-sm rounded-0" placeholder="Enter Your Email">
+						</div>
+						<div class="col-md-12 form-group mb-3">
+							<label for="message">Email</label>
+							<textarea type="text" id="message" name="name" class="form-control form-control-sm rounded-0" rows="3" placeholder="Enter Your message here"></textarea>
+						</div>
+						<div class="d-grid">
+							<a href="#" class="btn btn-warning">Submit</a>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+<!--	End Contact Section-->
+
+<!--	Start Footer Section-->
+	<footer class="bg-dark ">
+		<div class="container-fluid py-3 ">
+			<div class="col-12 text-center" >
+				<p class="text-light m-0">
+					&copy; Copyright <span id="autoyear"></span>  - Made by DLT Co,.Ltd;
+				</p>
+			</div>
+
+		</div>
+	</footer>
+<!--	End Footer Section-->
+
+<!--	Start Modal Area-->
+
+<!--			Start Get in Touch Modal-->
+
+		<div id="loginmodal" class="modal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Login Here</h5>
+						<button class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<div class="col-12">
+							<form action="" method="">
+								<div class="form-group mb-3">
+									<label for="loginemail">Email</label>
+									<input type="email" id="loginemail" name="loginemail" class="form-control form-control-sm rounded-0" placeholder="Enter Your Email">
+								</div>
+								<div class="form-group mb-2">
+									<label for="loginpw">Password</label>
+									<input type="password" name="loginpw" id="loginpw" class="form-control form-control-sm rounded-0" placeholder="Enter Your Password" >
+								</div>
+								<div class="d-flex justify-content-end">
+									<button type="reset" class="btn btn-secondary btn-sm me-2" data-bs-dismiss="modal">Cancel</button>
+									<button type="submit" class="btn btn-warning btn-sm">Login</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<p>Not Register! <a href="#">Sign Up Here</a> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--			End Get in Touch Modal-->
+
+<!--	End Modal Area-->
 <!-- bootstrap css/js popperjs-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <!-- bootstrap css/js bootstrapjs-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!--jquery-->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<!--	Elfsight-->
+	<script src="https://apps.elfsight.com/p/platform.js"></script>
+
+	<script>
+		const autoyear = document.getElementById('autoyear');
+		const getyear = new Date().getUTCFullYear();
+		autoyear.textContent = getyear;
+	</script>
+
 </body>
+
 </html>
